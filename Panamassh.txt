@@ -63,8 +63,8 @@
             "server": "185.244.139.101",
             "server_port": 1443,
             "network": "tcp",
-            "username": "bDkNHbZNSN4zPsxHhzYgQXgV",
-            "password": "Pvf8PVrZasdMDD2tNAcxwAPk",
+            "username": "c6FeneyYxSVKqLdqgjSwn6uV",
+            "password": "mAdpQxkezq4FStzFv5WWwHk3",
             "auth_retry": "none",
             "tls": {
                 "server_name": "",
@@ -107,8 +107,8 @@
             "server": "185.244.139.83",
             "server_port": 1443,
             "network": "tcp",
-            "username": "bDkNHbZNSN4zPsxHhzYgQXgV",
-            "password": "Pvf8PVrZasdMDD2tNAcxwAPk",
+            "username": "c6FeneyYxSVKqLdqgjSwn6uV",
+            "password": "mAdpQxkezq4FStzFv5WWwHk3",
             "auth_retry": "none",
             "tls": {
                 "server_name": "",
