@@ -90,6 +90,21 @@
       ['Switzerland', 'CH', '🇨🇭'], ['Taiwan', 'TW', '🇹🇼'], ['Thailand', 'TH', '🇹🇭'], ['Turkey', 'TR', '🇹🇷'],
       ['Uae', 'AE', '🇦🇪'], ['Uk', 'GB', '🇬🇧'], ['Ukraine', 'UA', '🇺🇦'], ['USA', 'US', '🇺🇸'],
       ['Uruguay', 'UY', '🇺🇾'], ['Venezuela', 'VE', '🇻🇪'], ['Vietnam', 'VN', '🇻🇳'],
+      ['Afghanistan', 'AF', '🇦🇫'],
+      ['Angola', 'AO', '🇦🇴'],
+      ['Aruba', 'AW', '🇦🇼'],
+      ['Azerbaijan', 'AZ', '🇦🇿'],
+      ['Barbados', 'BB', '🇧🇧'],
+      ['Bahrain', 'BH', '🇧🇭'],
+      ['Bermuda', 'BM', '🇧🇲'],
+      ['Brunei', 'BN', '🇧🇳'],
+      ['Bhutan', 'BT', '🇧🇹'],
+      ['Cayman_Islands', 'KY', '🇰🇾'],
+      ['Oman', 'OM', '🇴🇲'],
+      ['Philippines', 'PH', '🇵🇭'],
+      ['Puerto_Rico', 'PR', '🇵🇷'],
+      ['United_Kingdom', 'UK', '🇺🇰'],
+      ['British_Virgin_Islands', 'VG', '🇻🇬'],
     ];
 
     // ==========================================================================
@@ -197,6 +212,102 @@
       Vietnam: 'Vietnam.txt',
     };
     const openvpnFileFor = countryKey => OPENVPN_FILES[countryKey];
+
+    // فایل‌های JSON اختصاصی VPN (کانفیگ کامل Sing-box)، کلید بر اساس کد ISO کشور.
+    const VPN_JSON_FILES = {
+      'AD': 'ad-andorra.json',
+      'AE': 'ae-united-arab-emirates.json',
+      'AF': 'af-afghanistan.json',
+      'AL': 'al-albania.json',
+      'AM': 'am-armenia.json',
+      'AO': 'ao-angola.json',
+      'AR': 'ar-argentina.json',
+      'AT': 'at-austria.json',
+      'AU': 'au-australia.json',
+      'AW': 'aw-aruba.json',
+      'AZ': 'az-azerbaijan.json',
+      'BA': 'ba-bosnia-and-herzegovina.json',
+      'BB': 'bb-barbados.json',
+      'BD': 'bd-bangladesh.json',
+      'BE': 'be-belgium.json',
+      'BG': 'bg-bulgaria.json',
+      'BH': 'bh-bahrain.json',
+      'BM': 'bm-bermuda.json',
+      'BN': 'bn-brunei.json',
+      'BO': 'bo-bolivia.json',
+      'BR': 'br-brazil.json',
+      'BS': 'bs-bahamas.json',
+      'BT': 'bt-bhutan.json',
+      'BY': 'by-belarus.json',
+      'CA': 'ca-canada.json',
+      'CH': 'ch-switzerland.json',
+      'CL': 'cl-chile.json',
+      'CN': 'cn-china.json',
+      'CO': 'co-colombia.json',
+      'CR': 'cr-costa-rica.json',
+      'CY': 'cy-cyprus.json',
+      'CZ': 'cz-czechia.json',
+      'DE': 'de-germany.json',
+      'DK': 'dk-denmark.json',
+      'DZ': 'dz-algeria.json',
+      'EC': 'ec-ecuador.json',
+      'EE': 'ee-estonia.json',
+      'EG': 'eg-egypt.json',
+      'ES': 'es-spain.json',
+      'FI': 'fi-finland.json',
+      'FR': 'fr-france.json',
+      'GE': 'ge-georgia.json',
+      'GR': 'gr-greece.json',
+      'GT': 'gt-guatemala.json',
+      'HK': 'hk-hong-kong.json',
+      'HR': 'hr-croatia.json',
+      'HU': 'hu-hungary.json',
+      'ID': 'id-indonesia.json',
+      'IE': 'ie-ireland.json',
+      'IN': 'in-india.json',
+      'IS': 'is-iceland.json',
+      'IT': 'it-italy.json',
+      'JP': 'jp-japan.json',
+      'KH': 'kh-cambodia.json',
+      'KR': 'kr-south-korea.json',
+      'KY': 'ky-cayman-islands.json',
+      'KZ': 'kz-kazakhstan.json',
+      'LT': 'lt-lithuania.json',
+      'LU': 'lu-luxembourg.json',
+      'LV': 'lv-latvia.json',
+      'MC': 'mc-monaco.json',
+      'MD': 'md-moldova.json',
+      'MX': 'mx-mexico.json',
+      'MY': 'my-malaysia.json',
+      'NG': 'ng-nigeria.json',
+      'NL': 'nl-netherlands.json',
+      'NO': 'no-norway.json',
+      'NZ': 'nz-new-zealand.json',
+      'OM': 'om-oman.json',
+      'PA': 'pa-panama.json',
+      'PE': 'pe-peru.json',
+      'PH': 'ph-philippines.json',
+      'PL': 'pl-poland.json',
+      'PR': 'pr-puerto-rico.json',
+      'PT': 'pt-portugal.json',
+      'RO': 'ro-romania.json',
+      'RS': 'rs-serbia.json',
+      'RU': 'ru-russia.json',
+      'SE': 'se-sweden.json',
+      'SG': 'sg-singapore.json',
+      'SI': 'si-slovenia.json',
+      'SK': 'sk-slovakia.json',
+      'TH': 'th-thailand.json',
+      'TR': 'tr-turkey.json',
+      'TW': 'tw-taiwan.json',
+      'UA': 'ua-ukraine.json',
+      'UK': 'uk-united-kingdom.json',
+      'UY': 'uy-uruguay.json',
+      'VE': 've-venezuela.json',
+      'VG': 'vg-british-virgin-islands.json',
+      'VN': 'vn-vietnam.json',
+      'ZA': 'za-south-africa.json',
+    };
 
     // ==========================================================================
     // نام فایل‌های نوع دوم (JNIR) — فقط برای کشورهایی که فایل دارند.
@@ -421,11 +532,13 @@
       const openvpnFiles = toFileList(openvpnFileFor(countryKey));
       const typeBFiles = toFileList(TYPE_B_FILES[countryKey]);
       const sgFiles = toFileList(SG_FILES[countryKey]);
+      const vpnJsonFile = VPN_JSON_FILES[countryCode];
 
       const buttonsHtml = [
         renderConfigTypeButtons('OpenVPN', openvpnFiles, 'openvpn', countryLabel),
         renderConfigTypeButtons(TYPE_B_LABEL, typeBFiles, 'surf', countryLabel),
         renderConfigTypeButtons(TYPE_C_LABEL, sgFiles, 'udp', countryLabel),
+        ...(vpnJsonFile ? [renderActionButtons(`VPN ${flagEmoji}`, vpnJsonFile, 'vpn', countryLabel)] : []),
       ].join('');
 
       return `
@@ -470,9 +583,10 @@
     // نام پروفایلی که در سینگ‌باکس ذخیره می‌شود شامل «کشور - نوع کانفیگ» است، مثلا: "Germany - JNIR"
     function showQrModal(fileName, configType, countryLabel) {
       const downloadUrl = urlFor(fileName);
-      const typeLabel = configType === 'surf' ? TYPE_B_LABEL : configType === 'udp' ? TYPE_C_LABEL : 'OpenVPN';
+      const typeLabel = configType === 'vpn' ? `VPN ${countryLabel}` : configType === 'surf' ? TYPE_B_LABEL : configType === 'udp' ? TYPE_C_LABEL : 'OpenVPN';
       const profileName = `${countryLabel} - ${typeLabel}`;
-      const importUrl = `sing-box://import-remote-profile?url=${encodeURIComponent(downloadUrl)}#${encodeURIComponent(profileName)}`;
+      // فایل‌های VPN JSON کانفیگ کامل Sing-box هستند؛ QR آن‌ها لینک مستقیم دانلود را باز می‌کند.
+      const importUrl = configType === 'vpn' ? downloadUrl : `sing-box://import-remote-profile?url=${encodeURIComponent(downloadUrl)}#${encodeURIComponent(profileName)}`;
 
       document.getElementById('qrTitle').textContent = `QR کد ${profileName}`;
       document.getElementById('qrImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(importUrl)}`;
